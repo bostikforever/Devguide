@@ -42,8 +42,21 @@ Open <http://localhost:4000/>. Files will update live as you edit them.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for information on how to submit to this guide.
 
+## Deployment
+
+Install required packages:
+
+```sh
+sudo gem install dotenv aws-sdk thread bundler git mime
+```
+
+
+```sh
+./deploy.sh
+```
+
 ## License
 
-Content: CC Zero
+Content: CC-BY
 
-README & Template: CC BY-SA 4.0 Template based on the 3DR px4 Dev Guide.
+README & Template: CC-BY-SA 4.0 Template based on the 3DR px4 Dev Guide.
