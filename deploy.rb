@@ -35,7 +35,7 @@ class S3FolderUpload
     @folder_path       = folder_path
     @files             = Dir.glob "#{folder_path}/**/{*,.*}"
     @total_files       = files.length
-    @connection        = AWS::S3.new(access_key_id: aws_key, secret_access_key: aws_secret)
+    @connection        = AWS::S3.new #(access_key_id: aws_key, secret_access_key: aws_secret)
     @s3_bucket         = @connection.buckets[bucket]
   end
 
