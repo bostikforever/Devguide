@@ -153,18 +153,18 @@ if options[:bucket] == nil || options[:aws_key] == nil || options[:aws_secret] =
   abort 'Missing required options!'
 end
 
-# Make sure repository is clean before doing build
-repo = Git.open '.'
+# # Make sure repository is clean before doing build
+# repo = Git.open '.'
 
-# Save previous branch and checkout specified branch from options
-original_branch = repo.current_branch
-repo.checkout(options[:branch])
+# # Save previous branch and checkout specified branch from options
+# original_branch = repo.current_branch
+# repo.checkout(options[:branch])
 
-unless options[:force]
-  [:added, :changed, :deleted, :untracked].each do |s|
-    abort 'Repository status is not clean!' unless repo.status.send(s).empty?
-  end
-end
+# unless options[:force]
+#   [:added, :changed, :deleted, :untracked].each do |s|
+#     abort 'Repository status is not clean!' unless repo.status.send(s).empty?
+#   end
+# end
 
 # Build book
 abort 'Failed to build book!' unless system 'gitbook', 'build', 'book', options[:build_dir], '--format', 'website'
@@ -192,10 +192,3 @@ uploader.cleanup!
 
 # Cleanup build directory
 FileUtils.remove_entry_secure options[:build_dir]
-
-# Tag with bucket name & date deployed.
-# We don't want tags to clutter our repo
-#repo.add_tag(options[:bucket] + "@" + Time.new.strftime("%Y-%m-%d"), {:f => true})
-
-# Switch back to the original branch
-repo.checkout(original_branch)
