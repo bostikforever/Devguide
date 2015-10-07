@@ -1,6 +1,10 @@
 # PX4 Developer Guide
 
-This guide *will be* published online at: http://dev.px4.io/
+[![Build Status](https://travis-ci.org/PX4/Devguide.svg?branch=master)](https://travis-ci.org/PX4/Devguide)
+
+This guide *is published by Travis CI* online at: http://dev.px4.io/
+
+### Prerequisites
 
 To start editing, install [GitBook](https://www.gitbook.com/) (requires Node.js):
 
@@ -11,6 +15,12 @@ brew install npm
 ```
 
 On Linux - you're using Linux, so you should know!
+
+```sh
+sudo apt-get install npm
+```
+
+### Installing Gitbook
 
 ```
 npm install grunt-cli -g
@@ -26,13 +36,16 @@ gitbook install book
 
 ```
 
-Build once with grunt:
+### Running
+
+Build once with grunt every time the HTML template changes:
 
 ```
 grunt
 ```
 
-Then view it locally:
+Then view it locally. *NOTE*: The local view will update when the markup files are changed,
+so there is no need to re-run this command.
 
 ```
 gitbook serve book
