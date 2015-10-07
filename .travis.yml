@@ -1,20 +1,15 @@
 language: node_js
 sudo: false
 node_js:
-  - "iojs"
+- iojs
 before_script:
-  - npm install -g grunt-cli gitbook-cli
-  - gitbook install book
+- npm install -g grunt-cli gitbook-cli
+- gitbook install book
 after_success:
-  - |
-    if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
-        echo "$SSH_KEY" | base64 --decode > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        eval `ssh-agent`
-        ssh-add ~/.ssh/id_rsa
-        ./scripts/publish-pages.sh
-    fi
+- |
+  ./deploy.sh
 matrix:
   fast_finish: true
-notifications:
-  email: false
+env:
+  secure: "k5/JlSfkroEJykehrtlfbGHS8awtft08Pd0dtebjdtSBJ0g7rBuKoALzf/PkZcZwxjZJGgsatOXoL+aBwVyo8FuejrR/tpWoIolWroLMMYAepEmcUGGrsFYLTUhpDacvmB3hmxhpktj/L74YoxhSRHedurp/hR4+fY8NHx+1+PrVxhIPWJZOUnS0EGyvyLjtPg6aFIWDuQIo+04zVU1Z4FAZRtncWZzhL4mex3daGP4ewt2zUPWgLV8J5Dv48a/L98jLrubNQvzD98ppXCwoJbrNWVG7b52qScIRXMB3awLvW113HubYKu2sGJu1gBsIxRbxI3IhbCRrXAhTz3eTBP/QtnsMg3MYPxtJQe1etFcBqMWyLsBEynfZJWycd61MBQCdLzO6tvkQPuJ1C8tFhTVejJDhqM8cnHyZ2HgJNJSQGYRYmudkuYBF0vMCx/YGeIYArdDyOegd9dwfdeIqe4CPLkQmJZ9sRQIVHz/CZPhwYM/y/+EePuZMARa8MoXWJq+4sfvNAJOFzvzfu1XTNEt39Y1BAS5Zkil1ACVCnfEWJcQaNsW3oRcoYSjol/76FPOaB4Du7j0sMm3ibxTL1ZX28OEpm+aYaptJdbABc0cq1unYBEnB4jxbJSsX785ct7+cmNA2MiH6UCobM7TtnmUvYScpcifWEGVZM6g6Y7M="
+  secure: "egfoJU3EVHI40XhfpriVjTuVDrcmWAH0LNTwdffibCQ/fuBMN4b8qrLVzyl40aOkUzOCDKYwTxoo0wSOxIPIcWgsZVloBecMHNqgbn0FZ1th4M7U5bU1GqwfJFpK+JpCKjsQDXOGkOBbvFEoDJr3sPPvtWaBsGeLNEqoWOpopl/nQG/Zq/Dy8qL4vYW47ZlQPUY+679jj284YvQ0NieYReEgYEH+GJZhS4oFhCy2M7GkNMjI7GE3UYRDkKfwOUSIcO87KWdLKsulER/a6OdlG6dbJR8NIyKxaTFyQOaV0+01uJqKXZMOXFef1B+wZxE7B3T0VQjL6NDMZOYPtv3hy/ukxvN6ly5bx9sGbhwZrr/U/ARZmmvtg3FKj0WCgfULZ042+f3D1WgeZH+wmcEpq3FUSQGeFuxhGZIcDG6xsoUFkk9SN46HS7tXS6AYKL3sVmHL5dId49+wOZY0Px7QXVZy7JoMyhyyLcWTMdfisHoWmIWnEKKqG048oU9dMZvO5T9NS6AXrQvXeOgRQidmJLwYh1N3INVolmMeu7kWvGIdynlkR+6+PXX225K3wfJ04MDzfFrYyOQUawGFQZ7HneAVTSyI7UZi2Nh75vmoLk0B/VvE+FQYAuzWzpmNsYbam/yys8Mrzx8akTb9lkXMmYM+Ed9Eg84+lWlTRmvmxsQ="

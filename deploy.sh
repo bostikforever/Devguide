@@ -1,7 +1,5 @@
 #!/bin/sh
 
-export AWS_KEY=
-export AWS_SECRET=
-export BUCKET=
+export BUCKET=dev.px4.io
 
-deploy.rb
+./deploy.rb

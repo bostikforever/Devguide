@@ -36,8 +36,8 @@ class S3FolderUpload
     @folder_path       = folder_path
     @files             = Dir.glob "#{folder_path}/**/{*,.*}"
     @total_files       = files.length
-    @connection        = AWS::S3.new #(access_key_id: aws_key, secret_access_key: aws_secret)
-    @s3_bucket         = @connection.buckets[bucket]
+    @connection        = Aws::S3::Resource.new(region: 'us-east-1', access_key_id: aws_key, secret_access_key: aws_secret)
+    @s3_bucket         = @connection.bucket(bucket)
   end
 
   # public: Upload files from the folder to S3
@@ -79,9 +79,9 @@ class S3FolderUpload
 
           next if File.directory? data
           options = { :acl => :public_read }
-          options[:content_type] ||=  MIME::Types.type_for(file).first
-          obj = s3_bucket.objects[path]
-          obj.write(data, options)
+          #options[:content_type] ||=  MIME::Types.type_for(file).first
+          obj = s3_bucket.object(path)
+          obj.upload_file(data)
         end
       }
     end
