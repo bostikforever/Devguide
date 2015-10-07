@@ -150,7 +150,7 @@ parser.parse!
 
 if options[:bucket] == nil || options[:aws_key] == nil || options[:aws_secret] == nil
   puts parser
-  exit
+  abort 'Missing required options!'
 end
 
 # Make sure repository is clean before doing build
