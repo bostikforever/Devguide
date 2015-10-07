@@ -6,6 +6,7 @@ before_script:
 - npm install -g grunt-cli gitbook-cli
 - npm install
 - gitbook install book
+- grunt
 - gem install dotenv aws-sdk thread bundler git mime
 after_success:
 - |
