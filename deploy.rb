@@ -10,6 +10,7 @@ require 'rubygems'
 require 'bundler/setup'
 
 require 'aws-sdk'
+require 'aws-sdk-core'
 require 'git'
 
 # Load env values first!
