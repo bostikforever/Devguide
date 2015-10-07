@@ -52,7 +52,10 @@ sudo gem install dotenv aws-sdk thread bundler git mime
 
 
 ```sh
-./deploy.sh
+export BUCKET=dev.px4.io
+export AWS_KEY=[KEY]
+export AWS_SECRET=[SECRET]
+./deploy.rb
 ```
 
 ## License

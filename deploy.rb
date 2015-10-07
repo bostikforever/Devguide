@@ -124,11 +124,11 @@ parser = OptionParser.new do |opts|
     options[:branch] = br
   end
 
-  opts.on('-k', '--aws_key=KEY', "AWS Upload Key (Required, default: \"#{options[:aws_key]}\")") do |k|
+  opts.on('-k', '--aws_key=KEY', "AWS Upload Key (Required)") do |k|
     options[:aws_key] = k
   end
 
-  opts.on('-s', '--aws_secret=SECRET', "AWS Upload Secret (Required, default: \"#{options[:aws_secret]}\")") do |s|
+  opts.on('-s', '--aws_secret=SECRET', "AWS Upload Secret (Required)") do |s|
     options[:aws_secret] = s
   end
 
