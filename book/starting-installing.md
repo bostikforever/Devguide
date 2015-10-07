@@ -65,7 +65,7 @@ abc
 Note
 </aside>
 
-First install _virtualenv_ on Solo using _pip_:
+Install _abc_ on Pixhawk using _apt_:
 
 ```sh
 bash
