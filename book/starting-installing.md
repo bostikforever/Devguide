@@ -7,7 +7,7 @@
 <div class="host-code"></div>
 
 ```sh
-sh command
+sh command abc
 ```
 
 ## Installing Packages
