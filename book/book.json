@@ -5,8 +5,14 @@
     "scrollablecode",
     "anchors",
     "-mathjax",
-    "image-captions"
+    "image-captions",
+    "mermaid-2"
   ],
+  "pluginsConfig": {
+      "mermaid-2": {
+         "theme": "forest"
+      }
+    },
   "links": {
     "sharing": {
       "google": false,
