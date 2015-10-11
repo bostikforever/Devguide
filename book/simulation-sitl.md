@@ -25,3 +25,11 @@ make run_sitl_quad
 ```
 
 ## Installing Packages
+
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+```
