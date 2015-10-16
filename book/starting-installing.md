@@ -85,3 +85,13 @@ Note [Link](advanced-page.html)
 <aside class="note">
 Note
 </aside>
+
+## Installing Packages
+
+```mermaid
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+```
