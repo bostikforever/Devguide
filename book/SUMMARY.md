@@ -11,8 +11,10 @@ This is the summary of the PX4 dev guide.
 * Ground Control
    * [Introduction](qgroundcontrol-intro.md)
 * Simulation
-   * [Software Simulation](simulation-sitl.md)
-     * [Debugging](simulation-debugging.md)
+  * [Prerequisites](simulation-prerequisites.md)
+  * [Light Simulation](simulation-sitl.md)
+    * [Debugging](simulation-debugging.md)
+  * [Gazebo Simulation](simulation-gazebo.md)
 * Autopilot Hardware
    * [Snapdragon Flight](hardware-snapdragon.md)
    * [Pixhawk](hardware-pixhawk.md)
