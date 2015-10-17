@@ -1,6 +1,6 @@
 # Pixfalcon Hardware
 
-![](images/hardware/hardware-pixfalcon.jpg =400x)
+![](images/hardware/hardware-pixfalcon.jpg)
 
 ## Quick Summary
 

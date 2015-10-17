@@ -1,6 +1,6 @@
 # Pixhawk Hardware
 
-![](images/hardware/hardware-pixhawk.jpg =400x)
+![](images/hardware/hardware-pixhawk.jpg)
 
 ## Quick Summary
 
