@@ -1,6 +1,6 @@
 # Pixfalcon Hardware
 
-![](images/hardware/hardware-pixfalcon.jpg)
+![](images/hardware/hardware-pixfalcon.png)
 
 ## Quick Summary
 

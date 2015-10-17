@@ -1,6 +1,6 @@
 # Pixhawk Hardware
 
-![](images/hardware/hardware-pixhawk.jpg)
+![](images/hardware/hardware-pixhawk.png)
 
 ## Quick Summary
 
