@@ -9,9 +9,9 @@ Developers only! This guide is under active development and not intended for con
 
 This guide describes how to work inside the PX4 system architecture. It enables developers to:
 
-* Get an overview of the system
-* Access and modify the PX4 Flight Stack and PX4 Middleware
-* Deploy PX4 on Pixhawk and Snapdragon Flight
+* Get an [overview of the system](starting-initial-config.md)
+* Access and modify the [PX4 Flight Stack](concept-flight-stack.md) and [PX4 Middleware](concept-middleware.md)
+* Deploy PX4 on [Snapdragon Flight](hardware-snapdragon.md), [Pixhawk](hardware-pixhawk.md) and [Pixfalcon](hardware-pixfalcon.md)
 
 ## Changelog
 

@@ -6,7 +6,8 @@
     "anchors",
     "-mathjax",
     "image-captions",
-    "mermaid-2"
+    "mermaid-2",
+    "youtube"
   ],
   "pluginsConfig": {
       "mermaid-2": {
