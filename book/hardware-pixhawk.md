@@ -26,3 +26,7 @@
   * 6x PWM / GPIO / PWM input
   * S.BUS / PPM / Spektrum input
   * S.BUS output
+
+## Pinouts and Schematics
+
+The board is documented in detailed on the [Pixhawk project](https://pixhawk.org/modules/pixhawk) website.
