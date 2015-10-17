@@ -8,7 +8,8 @@
     "image-captions",
     "mermaid-2",
     "youtube",
-    "redirect"
+    "redirect",
+    "mathjax"
   ],
   "pluginsConfig": {
       "mermaid-2": {
