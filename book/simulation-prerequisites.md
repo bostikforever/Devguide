@@ -11,9 +11,9 @@ brew install ant
 
 ## Linux
 
-<div class="host-code"></div>
 
-The convenience make target will compile the POSIX host build and run the simulation.
+
+<div class="host-code"></div>
 
 ```sh
 sudo apt-get install ant
@@ -21,5 +21,5 @@ sudo apt-get install ant
 
 ## Windows
 
-  * Install Java
+  * If Java is not already installed, install according to the [Oracle Java installation instructions](https://java.com/en/download/help/windows_manual_download.xml).
   
