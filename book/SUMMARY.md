@@ -23,7 +23,7 @@ This is the summary of the PX4 dev guide.
      * [UAVCAN Firmware Upgrades](uavcan-node-firmware.md)
      * [UAVCAN Configuration](uavcan-node-enumeration.md)
 * Airframes
-  * [Single Codebase](airframes-architecture.md)
+  * [Unified Codebase](airframes-architecture.md)
   * [Multicopters](airframes-multicopter.md)
   * [Planes](airframes-plane.md)
   * [VTOL](airframes-vtol.md)
