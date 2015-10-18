@@ -5,3 +5,4 @@ node_modules
 theme/vendors
 build
 envtest
+theme/assets/style.css
