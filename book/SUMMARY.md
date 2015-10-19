@@ -5,9 +5,16 @@ This is the summary of the PX4 dev guide.
 * Getting Started
   * [Initial Configuration](starting-initial-config.md)
   * [Toolchain Installation](starting-installing.md)
+    * [Mac OS](starting-installing-mac.md)
+    * [Linux](starting-installing-linux.md)
+      * [Troubleshooting](starting-installing-linux-boutique.md)
+    * [Windows](starting-installing-windows.md)
+  * [Building the Code](starting-building.md)
   * [Contributing](starting-contributing.md)
 * Concepts
   * [Architectural Overview](concept-architecture.md)
+  * [Flight Stack](concept-flight-stack.md)
+  * [Middleware](concept-middleware.md)
 * Ground Control
   * [Introduction](qgroundcontrol-intro.md)
 * Simulation

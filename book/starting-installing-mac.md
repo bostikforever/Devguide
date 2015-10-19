@@ -1,97 +1,28 @@
 # Installing Files and Code
 
+Usage of the [Homebrew package manager](http://mxcl.github.com/homebrew/) for Mac OS X is recommended. The installation of Homebrew is quick and easy: [installation instructions](http://mxcl.github.com/homebrew/).
 
-
-
+After installing Homebrew, copy these commands to your shell:
 
 <div class="host-code"></div>
 
 ```sh
-sh command abc
+brew tap PX4/homebrew-px4
+brew update
+brew install genromfs
+brew install kconfig-frontends
+brew install gcc-arm-none-eabi
+brew install astyle
+brew install cmake
 ```
 
-## Installing Packages
+Then install the required python packages:
 
-
-
-* ABC
-
-
-## Working
-
-<aside class="note">
-Note
-</aside>
-
-<aside class="todo">
-Todo
-</aside>
-
-
-### Installing
-
-```sh
-apt-get abc
-```
-
-Instruction:
-
-```sh
-$ abc
-```
-
-### Installing 2
-
-
-<aside class="note">
-abc
-</aside>
-
-abc
 <div class="host-code"></div>
 
 ```sh
-drone 
+sudo easy_install pip
+sudo pip install pyserial empy
 ```
 
-instruction
-
-
-### Installing _abc_
-
-abc
-
-<aside class="note">
-Note
-</aside>
-
-Install _abc_ on Pixhawk using _apt_:
-
-```sh
-bash
-```
-
-Instruction
-
-```sh
-bash
-```
-
-
-<aside class="note">
-Note [Link](advanced-page.html)
-</aside>
-
-<aside class="note">
-Note
-</aside>
-
-## Installing Packages
-
-```mermaid
-graph TD;
-  A-->B;
-  A-->C;
-  B-->D;
-  C-->D;
-```
+Now continue to run the [first build](starting-building.md)!
